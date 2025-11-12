@@ -15,5 +15,20 @@
 # vendor/
 
 duf
+duf-*
 
 dist/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+
+local/**
