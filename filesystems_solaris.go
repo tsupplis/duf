@@ -3,7 +3,7 @@
 
 package main
 
-func isFuseFs(m Mount) bool {
+func isFuseFs(_ Mount) bool {
 	// FUSE is not commonly used on Solaris
 	return false
 }
@@ -32,6 +32,6 @@ func isSpecialFs(m Mount) bool {
 	return false
 }
 
-func isHiddenFs(m Mount) bool {
+func isHiddenFs(_ Mount) bool {
 	return false
 }

@@ -3,12 +3,12 @@
 
 package main
 
-func isFuseFs(m Mount) bool {
+func isFuseFs(_ Mount) bool {
 	//FIXME: implement
 	return false
 }
 
-func isNetworkFs(m Mount) bool {
+func isNetworkFs(_ Mount) bool {
 	//FIXME: implement
 	return false
 }
@@ -17,6 +17,6 @@ func isSpecialFs(m Mount) bool {
 	return m.Fstype == "devfs"
 }
 
-func isHiddenFs(m Mount) bool {
+func isHiddenFs(_ Mount) bool {
 	return false
 }
