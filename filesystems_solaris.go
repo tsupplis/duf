@@ -21,7 +21,7 @@ func isNetworkFs(m Mount) bool {
 }
 
 func isSpecialFs(m Mount) bool {
-	fs := []string{"devfs", "ctfs", "fd", "lofs", "mntfs", "objfs", "proc", "tmpfs", "dev", "sharefs"}
+	fs := []string{"devfs", "ctfs", "fd", "lofs", "mntfs", "objfs", "proc", "tmpfs", "dev", "sharefs", "bootfs", "autofs"}
 
 	for _, v := range fs {
 		if m.Fstype == v {
